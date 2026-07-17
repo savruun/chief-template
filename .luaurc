@@ -1,11 +1,12 @@
 {
-    "aliases": {
-        "pkg": "roblox_packages",
-        "spkg": "roblox_server_packages",
-        "client": "src/client",
-        "server": "src/server",
-        "shared": "src/shared",
-        "cproviders": "src/client/providers",
-        "sproviders": "src/server/providers"
-    }
+  "aliases": {
+    "pkg": "roblox_packages",
+    "spkg": "roblox_server_packages",
+    "client": "src/client",
+    "server": "src/server",
+    "shared": "src/shared",
+    "cproviders": "src/client/providers",
+    "sproviders": "src/server/providers",
+    "lune": "~/.lune/.typedefs/0.10.4/"
+  }
 }
