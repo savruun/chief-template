@@ -1,0 +1,34 @@
+{
+  "name": "Chief",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "out/shared"
+      },
+
+      "Client": {
+        "$path": "out/client"
+      },
+
+      "Packages": {
+        "$path": "roblox_packages"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "out/server"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "runtime": {
+          "$path": "out/runtime.client.luau"
+        }
+      }
+    }
+  }
+}

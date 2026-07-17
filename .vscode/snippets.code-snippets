@@ -1,0 +1,43 @@
+{
+  "Chief Provider": {
+    "prefix": ["provider", "prvd"],
+    "description": "Creates a Chief Provider.",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}} = {}",
+      "",
+      "function $1.Start(self: Self)",
+      "\tprint('$1 started!')",
+      "end",
+      "",
+      "type Self = typeof($1)",
+      "return $1",
+      ""
+    ]
+  },
+
+  "Chief Trait": {
+    "prefix": ["trait", "trt"],
+    "description": "Creates a Chief Trait.",
+    "body": [
+      "const Traits = require('@pkg/traits')",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}} = {}",
+      "",
+      "$1.Info = Traits.info({",
+      "\tTag = '$1',",
+      "\tInstanceIs = 'BasePart'",
+      "})",
+      "",
+      "function $1.Init(self: Self)",
+      "\tprint('$1 initialized!')",
+      "end",
+      "",
+      "function $1.Start(self: Self)",
+      "\tprint('$1 started!')",
+      "end",
+      "",
+      "type Self = typeof($1) & Traits.BoundOf<typeof($1.Info)>",
+      "return $1"
+    ]
+  }
+}
